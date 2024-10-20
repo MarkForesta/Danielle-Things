@@ -32,10 +32,10 @@ function getRandomFromWeightedTable(inputTable, previousResponse) {
 document.addEventListener('DOMContentLoaded', function() {
     let buttonClicks = 0;
     const button = document.querySelector('button');
+    let response
     button.addEventListener('click', function() {
         // Find H2 Tag and change it's text
         buttonClicks += 1;
-        let response
         if (buttonClicks > 2) {
             response = "ChickFilA so at least Mark's happy"
         } else {
